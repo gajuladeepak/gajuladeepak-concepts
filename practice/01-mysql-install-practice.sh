@@ -2,6 +2,11 @@
 USERID=$(id -u)
 SOFTWARE=$1
 
+if [ -z $SOFTWARE ]
+then    
+    echo "Please provide input to the command"
+fi
+
 if [ $USERID -ne 0 ]
 then
     echo "Root access is requried"
