@@ -23,10 +23,10 @@ INSTALLATION_CHECK(){
     if [ $1 -ne 0 ]
     then
         echo "Sorry Something went wrong..."
-        echo "$2 installation is... $Redcolor Failed $NORMALCOLOR"
+        echo -e "$2 installation is... $Redcolor Failed $NORMALCOLOR"
         exit 1
     else
-        echo "$2 instllation is $Greencolor successfull $NORMALCOLOR"
+        echo -e "$2 instllation is $Greencolor successfull $NORMALCOLOR"
     fi
 
 }
