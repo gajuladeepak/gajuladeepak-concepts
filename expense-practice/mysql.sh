@@ -49,7 +49,7 @@ VALIDATE $? "Enabled the service"
 systemctl start mysqld &>>$LOGFILE
 VALIDATE $? "starting the service"
 
-mysql -h backend.deepakaws.online -u root -pExpenseApp@1 -e 'show databases;' &>>$LOGFILE
+mysql -h mysql.deepakaws.online -u root -pExpenseApp@1 -e 'show databases;' &>>$LOGFILE
 
 if [ $? -ne 0 ]
 then 
