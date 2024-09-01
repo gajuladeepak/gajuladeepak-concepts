@@ -20,5 +20,7 @@ then
     else
         echo "$SOFTWARE instllation is successfull"
     fi
+else
+    echo "Already Installed..No need to install again"
 
 fi
