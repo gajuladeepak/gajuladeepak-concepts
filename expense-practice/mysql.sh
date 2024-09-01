@@ -58,5 +58,4 @@ then
     VALIDATE $? "Setting up root password"
 else
     echo -e "Password was already setup...$Y skip the step $N" | tee -a $LOGFILE
-
 fi
