@@ -37,7 +37,7 @@ dnf list installed $SOFTWARE
 if [ $? -ne 0 ]
 then
     echo "Need to install $SOFTWARE.. Not yet installed"
-    dnf install $SOFTWARE -y
+    dnf installll $SOFTWARE -y
     INSTALLATION_CHECK $? $SOFTWARE
 else
     echo "Already Installed..No need to install again"
