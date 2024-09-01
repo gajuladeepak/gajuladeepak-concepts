@@ -1,4 +1,11 @@
 #!/bin/bash
+
+#to print in red color in terminal echo -e "\e[31m Hello World"
+
+Redcolor="\e[31m"
+Greencolor="e[32m"
+NORMALCOLOR="e[0m"
+#!/bin/bash
 USERID=$(id -u)
 SOFTWARE=$1
 
@@ -15,10 +22,11 @@ CHECK_ROOT(){
 INSTALLATION_CHECK(){
     if [ $1 -ne 0 ]
     then
-        echo "Sorry Something wwnt wrong..."
+        echo "Sorry Something went wrong..."
+        echo "$2 installation is... $Redcolor Failed $NORMALCOLOR"
         exit 1
     else
-        echo "$2 instllation is successfull"
+        echo "$2 instllation is $Greencolor successfull $NORMALCOLOR"
     fi
 
 }
@@ -44,3 +52,7 @@ else
     echo "Already Installed..No need to install again"
 
 fi
+
+
+#to remove any package from server 
+#command: dnf remove mysql -y

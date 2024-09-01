@@ -38,3 +38,6 @@ else
     echo "Already Installed..No need to install again"
 
 fi
+
+#to remove any package from server 
+#command: dnf remove mysql -y
