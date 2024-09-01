@@ -6,6 +6,7 @@ if [ $USERID -ne 0 ]
 then
     echo "Root access is requried"
     exit 1
+fi
 
 dnf list installed $SOFTWARE
 
