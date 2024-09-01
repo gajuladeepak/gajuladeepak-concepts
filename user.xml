@@ -1,0 +1,38 @@
+<Students>
+    <Student>
+        <Name>deepak</Name>
+        <Email>gajuladeepk17@gmail.com</Email>
+        <Addresses>
+            <PermanentAddress>
+                <AddressLine1>H.No:6-8-36</AddressLine1>
+                <AddressLine2>Subhash Nagar</AddressLine2>
+                <Street>street 2</Street>
+            </PermanentAddress>
+            <CurrentAddress>
+                <AddressLine1>Hyderabad</AddressLine1>
+                <AddressLine2>kukatpally</AddressLine2>
+                <Street>street 1</Street>
+            </CurrentAddress>
+            
+        </Addresses>
+    </Student>
+    <Student>
+        <Name>deepak</Name>
+        <Email>gajuladeepk17@gmail.com</Email>
+        <Addresses>
+            <PermanentAddress>
+                <AddressLine1>H.No:6-8-36</AddressLine1>
+                <AddressLine2>Subhash Nagar</AddressLine2>
+                <Street>street 2</Street>
+            </PermanentAddress>
+            <CurrentAddress>
+                <AddressLine1>Hyderabad</AddressLine1>
+                <AddressLine2>kukatpally</AddressLine2>
+                <Street>street 1</Street>
+            </CurrentAddress>
+            
+        </Addresses>
+    </Student>
+</Students>
+
+#student is an object and address is also an object in the address object we have fields
