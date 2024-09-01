@@ -3,8 +3,8 @@
 #to print in red color in terminal echo -e "\e[31m Hello World"
 
 Redcolor="\e[31m"
-Greencolor="e[32m"
-NORMALCOLOR="e[0m"
+Greencolor="\e[32m"
+NORMALCOLOR="\e[0m"
 #!/bin/bash
 USERID=$(id -u)
 SOFTWARE=$1
