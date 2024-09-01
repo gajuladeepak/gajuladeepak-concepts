@@ -10,12 +10,12 @@ CHECK_ROOT(){
     fi
     
 }
+CHECK_ROOT
 
 
 if [ -z $SOFTWARE ]
 then    
     echo "Please provide input to the command"
-    CHECK_ROOT
     exit 1
 fi
 
