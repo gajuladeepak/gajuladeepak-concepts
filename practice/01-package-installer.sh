@@ -2,17 +2,24 @@
 USERID=$(id -u)
 SOFTWARE=$1
 
+CHECK_ROOT(){
+    if [ $USERID -ne 0 ]
+    then
+        echo "Root access is requried"
+        exit 1
+    fi
+    
+}
+
+
 if [ -z $SOFTWARE ]
 then    
     echo "Please provide input to the command"
+    CHECK_ROOT
     exit 1
 fi
 
-if [ $USERID -ne 0 ]
-then
-    echo "Root access is requried"
-    exit 1
-fi
+
 
 dnf list installed $SOFTWARE
 
