@@ -42,7 +42,7 @@ VALIDATE $? "Enabled the new version"
 dnf install nodejs -y &>>$LOGFILE
 VALIDATE $? "Installing the NODEJS"
 
-id expense
+id expense &>>$LOGFILE
 if [ $? -ne 0 ]
 then
     echo "Creating the user"
@@ -66,7 +66,7 @@ VALIDATE $? "Extracting the backend application code"
 npm install &>>$LOGFILE &>>$LOGFILE
 VALIDATE $? "Installing the packages"
 
-cp /home/ec2-user/expence-shell/backend.service  /etc/systemd/system/backend.service
+cp /home/ec2-user/gajuladeepak-concepts/expense-practice/backend.service  /etc/systemd/system/backend.service
 
 #firstly we need to load the data without loading the data we may get errors. therefore we are loading the data before 
 dnf install mysql -y &>>$LOGFILE
