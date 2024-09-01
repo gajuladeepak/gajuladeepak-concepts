@@ -2,9 +2,10 @@
 
 #to print in red color in terminal echo -e "\e[31m Hello World"
 
-Redcolor="\e[31m"
-Greencolor="\e[32m"
-NORMALCOLOR="\e[0m"
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+Y="\e[33m"
 #!/bin/bash
 USERID=$(id -u)
 SOFTWARE=$1
@@ -23,10 +24,10 @@ INSTALLATION_CHECK(){
     if [ $1 -ne 0 ]
     then
         echo "Sorry Something went wrong..."
-        echo -e "$2 installation is... $Redcolor Failed $NORMALCOLOR"
+        echo -e "$2 installation is... $R Failed $N"
         exit 1
     else
-        echo -e "$2 instllation is $Greencolor successfull $NORMALCOLOR"
+        echo -e "$2 instllation is $G successfull $N"
     fi
 
 }
