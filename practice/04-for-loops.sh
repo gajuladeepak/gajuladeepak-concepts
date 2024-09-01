@@ -61,7 +61,7 @@ do
         dnf install $package -y
         INSTALLATION_CHECK $? $package
     else
-        echo "Already Installed..No need to install again"
+        echo "$G Already Installed $N ..No need to install again"
 
     fi
 done
