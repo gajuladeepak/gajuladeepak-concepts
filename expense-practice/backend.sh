@@ -39,7 +39,7 @@ VALIDATE $? "Disabled the Previous Version"
 dnf module enable nodejs:20 -y &>>$LOGFILE
 VALIDATE $? "Enabled the new version"
 
-dnf dnf install nodejs -y &>>$LOGFILE
+dnf install nodejs -y &>>$LOGFILE
 VALIDATE $? "Installing the NODEJS"
 
 id expense
