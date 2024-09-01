@@ -5,6 +5,7 @@ SOFTWARE=$1
 if [ -z $SOFTWARE ]
 then    
     echo "Please provide input to the command"
+    exit 1
 fi
 
 if [ $USERID -ne 0 ]
