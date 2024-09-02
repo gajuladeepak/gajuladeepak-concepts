@@ -9,8 +9,8 @@ N="\e[0m"
 
 if [ -d $SOURCE_DIR ]
 then
-    echo "Files Exists"
+    echo "$G Files Exists $N"
 else
-    echo "File do not exist"
+    echo "File $R do not exist $N"
     exit 1
 fi
