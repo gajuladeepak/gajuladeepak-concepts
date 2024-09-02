@@ -14,3 +14,15 @@ else
     echo -e "File $R do not exist $N"
     exit 1
 fi
+
+FILES=$(find $SOURCE_DIR . -name "*.log" -mtime +14)
+echo "FILES: $FILES"
+
+
+while IFS= read -r file
+do 
+    echo "Deleting file: $file"
+    rm -rf $file
+
+done <<< $FILES
+
